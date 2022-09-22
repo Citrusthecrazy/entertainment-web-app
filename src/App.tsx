@@ -1,6 +1,6 @@
 import { Navbar } from "./widgets";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { Home } from "./pages";
 
 const App = () => {
   return (
