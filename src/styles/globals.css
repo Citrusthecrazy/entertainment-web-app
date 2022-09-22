@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html{
+        font-family: 'Outfit', sans-serif;
+    }
+    body{
+        background:#10141E;
+        color:#fff;
+        font-weight:300;
+    }
+}
+
+@layer utilities {
+    .heading-l {
+      font-size:32px;
+      font-weight:300;
+      line-height:40.32px;
+      letter-spacing:-.5px;
+    }
+    .heading-m {
+      font-size:24px;
+      font-weight:300;
+      line-height:32.24px;
+    }
+    .heading-s {
+      font-size:24px;
+      font-weight:500;
+      line-height:32.24px;
+    }
+    .heading-xs {
+      font-size:18px;
+      font-weight:500;
+      line-height:22.68px;
+    }
+    .body-m {
+      font-size:15px;
+      font-weight:300;
+      line-height:18.9px;
+    }
+    .body-s {
+      font-size:13px;
+      font-weight:300;
+      line-height:16.38px;
+    }
+  }
