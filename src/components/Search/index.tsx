@@ -3,6 +3,8 @@ import searchIcon from "../../assets/icon-search.svg";
 type Props = {
   placeholder: string;
   className?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const Search = (props: Props) => {
@@ -13,6 +15,8 @@ const Search = (props: Props) => {
       <input
         type="text"
         placeholder={props.placeholder}
+        value={props.value}
+        onChange={props.onChange}
         className="bg-inherit text-inherit w-full focus:outline-none"
       />
     </div>

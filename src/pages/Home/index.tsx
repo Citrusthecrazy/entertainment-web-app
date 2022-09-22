@@ -1,17 +1,30 @@
-import React from "react";
-import {
-  RecommendedCard,
-  RecommendedMovies,
-  Search,
-  Trending,
-} from "../../components";
+import { useEffect, useState } from "react";
+import { RecommendedMovies, Search, Trending } from "../../components";
+import { SearchResults } from "../../widgets";
 
 const Home = () => {
+  const [searchValue, setSearchValue] = useState("");
+
+  if (searchValue) {
+    return (
+      <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4">
+        <Search
+          placeholder="Search for movies or TV series"
+          className="w-full col-span-2"
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+        <SearchResults searchValue={searchValue} />
+      </main>
+    );
+  }
   return (
-    <div className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4">
+    <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4">
       <Search
         placeholder="Search for movies or TV series"
         className="w-full col-span-2"
+        value={searchValue}
+        onChange={(e) => setSearchValue(e.target.value)}
       />
       <h1 className="text-xl font-light -tracking-[.31px] col-span-2">
         Trending
@@ -21,7 +34,7 @@ const Home = () => {
         Recomended for you
       </h1>
       <RecommendedMovies />
-    </div>
+    </main>
   );
 };
 

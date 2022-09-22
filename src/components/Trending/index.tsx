@@ -8,9 +8,9 @@ const Trending = () => {
     () => getTrendingMovies("all", "week"),
     {
       refetchOnWindowFocus: false,
+      refetchOnMount: false,
     }
   );
-  console.log(trending);
   return (
     <ul className="col-span-2 overflow-y-hidden no-scrollbar flex flex-row gap-4">
       {trending?.map((trendingItem: any) => (
