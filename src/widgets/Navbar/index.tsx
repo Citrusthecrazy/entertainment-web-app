@@ -15,10 +15,10 @@ const Navbar = () => {
       </Link>
       <nav>
         <ul className="flex flex-row gap-6">
-          <NavLink image={home} alt="home" />
-          <NavLink image={movies} alt="movies" />
-          <NavLink image={tvSeries} alt="tv series" />
-          <NavLink image={bookmarks} alt="bookmarks" />
+          <NavLink to="/" image={home} alt="home" />
+          <NavLink to="/movies" image={movies} alt="movies" />
+          <NavLink to="/tv-series" image={tvSeries} alt="tv series" />
+          <NavLink to="/bookmarks" image={bookmarks} alt="bookmarks" />
         </ul>
       </nav>
       <img
