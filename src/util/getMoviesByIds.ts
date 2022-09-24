@@ -1,11 +1,14 @@
 import axios from "axios";
 
 const getMovieById = async (id: number) => {
-  const { data } = await axios.get(
+  const { data, status } = await axios.get(
     `https://api.themoviedb.org/3/movie/${id}?api_key=${
       import.meta.env.VITE_TMDB_KEY
     }&language=en-US`
   );
+  if (status !== 200) {
+    throw new Error("Error fetching movie");
+  }
   return data;
 };
 

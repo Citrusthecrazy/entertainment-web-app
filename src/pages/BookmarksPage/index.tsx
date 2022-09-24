@@ -3,10 +3,13 @@ import { RecommendedCard, Search } from "../../components";
 import { getMoviesByIds } from "../../util/getMoviesByIds";
 
 const BookmarksPage = () => {
-  const bookmarks = JSON.parse(localStorage.getItem("bookmarkedItems") || "[]");
+  const bookmarks = JSON.parse(
+    localStorage.getItem("bookmarkedItems") || "[]"
+  ) as number[];
   const [bookmarkedMedia, setBookmarkedMedia] = useState<any[]>();
   const [searchFilter, setSearchFilter] = useState("");
   useEffect(() => {
+    if (bookmarks.length <= 0) return;
     const movies = getMoviesByIds(bookmarks);
     movies.then((res) => {
       setBookmarkedMedia(res);
