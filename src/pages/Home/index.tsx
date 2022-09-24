@@ -26,7 +26,7 @@ const Home = () => {
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
       />
-      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md: -l md:col-span-3 lg:col-span-4">
+      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3 lg:col-span-4">
         Trending
       </h1>
       <Trending />
