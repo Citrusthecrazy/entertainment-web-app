@@ -6,7 +6,7 @@
 ## Description
 This is an app that let's you see trending movies and tv shows and bookmark them for a possible future need.
 
-##Technologies used
+## Technologies used
   - React (typescript)
   - Vite
   - Tailwindcss
