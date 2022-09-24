@@ -37,11 +37,12 @@ const BookmarkButton = ({
 
   return (
     <button
-      className={`bg-darkBlue/50 rounded-full p-2 ${className}`}
+      className={`bg-darkBlue/50 rounded-full px-[10px] py-[9px] ${className}`}
       onClick={() => handleBookmark()}>
       <img
         src={!isBookmarked ? bookmarkEmpty : bookmarkFilled}
         alt="bookmark"
+        className="md:w-[11px] md:h-[14px]"
       />
     </button>
   );

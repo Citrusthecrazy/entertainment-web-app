@@ -18,11 +18,13 @@ const RecommendedCard = (props: Props) => {
         alt={props.title}
         className="rounded-lg w-full h-[110px] object-cover"
       />
-      <p className="text-[11px] font-light text-white/80 mt-4">
+      <p className="text-[11px] font-light text-white/80 mt-4 md:body-s">
         {new Date(props.year).getFullYear()} -{" "}
         <span className="capitalize">{props.type}</span> - {props.pg}
       </p>
-      <span className="text-[14px] font-normal mt-4">{props.title}</span>
+      <span className="text-[14px] font-normal mt-4 md:heading-xs">
+        {props.title}
+      </span>
       <BookmarkButton mediaId={props.id} className="absolute top-2 right-2" />
     </div>
   );

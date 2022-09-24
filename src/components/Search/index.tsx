@@ -10,8 +10,8 @@ type Props = {
 const Search = (props: Props) => {
   return (
     <div
-      className={`bg-transparent flex flex-row items-center gap-4 ${props.className}`}>
-      <img src={searchIcon} alt="search" className="w-6 h-6" />
+      className={`bg-transparent flex flex-row items-center gap-4 md:heading-m ${props.className}`}>
+      <img src={searchIcon} alt="search" className="w-6 h-6 md:w-8 md:h-8" />
       <input
         type="text"
         placeholder={props.placeholder}

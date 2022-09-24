@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-semiDarkBlue h-14 py-[18px] px-4 flex flex-row items-center justify-between w-full">
+    <header className="bg-semiDarkBlue h-14 py-[18px] px-4 flex flex-row items-center justify-between w-full md:w-auto md:m-6 md:rounded-[10px]">
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
