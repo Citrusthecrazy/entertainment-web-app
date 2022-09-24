@@ -22,14 +22,14 @@ const MoviesPage = () => {
     );
   }
   return (
-    <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4">
+    <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4 md:grid-cols-3">
       <Search
         placeholder="Search for movies"
         className="col-span-2"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
       />
-      <h1 className="text-xl font-light -tracking-[.31px] col-span-2">
+      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3">
         Movies
       </h1>
       {trendingMovies &&
