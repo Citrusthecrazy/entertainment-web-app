@@ -4,7 +4,7 @@ import { BookmarksPage, Home, MoviesPage, TvShowsPage } from "./pages";
 
 const App = () => {
   return (
-    <div className="w-screen h-screen flex flex-col">
+    <div className="w-screen h-screen flex flex-col lg:flex-row overflow-x-hidden">
       <Router>
         <Navbar />
         <Routes>

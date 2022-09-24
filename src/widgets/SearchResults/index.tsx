@@ -32,7 +32,7 @@ const SearchResults = ({ searchValue }: Props) => {
   if (loading) {
     return (
       <>
-        <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3">
+        <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3 lg:col-span-4">
           Loading...
         </h1>
       </>
@@ -40,7 +40,7 @@ const SearchResults = ({ searchValue }: Props) => {
   }
   return (
     <>
-      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l  md:col-span-3">
+      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3 lg:col-span-4">
         Showing results for '{searchValue}'
       </h1>
       {results.length > 0 ? (

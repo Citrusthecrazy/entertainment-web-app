@@ -9,12 +9,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-semiDarkBlue h-14 py-[18px] px-4 flex flex-row items-center justify-between w-full md:w-auto md:m-6 md:rounded-[10px]">
+    <header
+      className="bg-semiDarkBlue h-14 py-[18px] px-4 flex flex-row items-center
+                         justify-between w-full md:w-auto md:m-6 md:rounded-[10px]
+                         lg:h-auto lg:flex-col lg:m-8 lg:px-8 lg:py-[35px]">
       <Link to="/">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="lg:w-8 lg:h-[25px]" />
       </Link>
       <nav>
-        <ul className="flex flex-row gap-6">
+        <ul className="flex flex-row gap-6 lg:flex-col">
           <NavLink to="/" image={home} alt="home" />
           <NavLink to="/movies" image={movies} alt="movies" />
           <NavLink to="/tv-series" image={tvSeries} alt="tv series" />

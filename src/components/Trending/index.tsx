@@ -12,7 +12,7 @@ const Trending = () => {
     }
   );
   return (
-    <ul className="col-span-2 overflow-y-hidden no-scrollbar flex flex-row gap-4 md:col-span-3">
+    <ul className="col-span-2 overflow-y-hidden no-scrollbar flex flex-row gap-4 md:col-span-3 lg:col-span-4 lg:min-h-[230px] lg:gap-10">
       {trending?.map((trendingItem: any) => (
         <li key={trendingItem.id} className="flex items-center space-x-4">
           <TrendingCard

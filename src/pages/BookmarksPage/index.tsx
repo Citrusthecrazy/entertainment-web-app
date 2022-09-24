@@ -17,14 +17,14 @@ const BookmarksPage = () => {
   }, [bookmarks]);
 
   return (
-    <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4 md:grid-cols-3">
+    <main className="px-4 py-6 grid grid-cols-2 gap-y-6 gap-x-4 md:grid-cols-3 lg:grid-cols-4 lg:py-8 lg:overflow-y-auto lg:w-full">
       <Search
         placeholder="Search for bookmarked shows"
-        className="col-span-2 md:col-span-3"
+        className="col-span-2 md:col-span-3 lg:col-span-4"
         value={searchFilter}
         onChange={(e) => setSearchFilter(e.target.value)}
       />
-      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3">
+      <h1 className="text-xl font-light -tracking-[.31px] col-span-2 md:heading-l md:col-span-3 lg:col-span-4">
         Bookmarked movies
       </h1>
       {bookmarkedMedia &&
